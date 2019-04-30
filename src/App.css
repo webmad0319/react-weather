@@ -2,8 +2,13 @@ nav, section {
   padding: 20px;
 }
 
-nav {
-  color: red;
+ul {
+  display: flex;
+}
+
+button {
+  border: none;
+  background: none;
 }
 
 section {

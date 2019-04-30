@@ -1,0 +1,21 @@
+.cityContainer {
+  border-radius: 50%;
+  width: 15vw;
+  height: 15vw;
+  margin: 2vw;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cityContainer>li {
+  font-size: 1.5vw;
+}
+
+.cityContainer>i {
+ font-size: 3vw;
+ margin: 2vw;
+}
