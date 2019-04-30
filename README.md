@@ -1,10 +1,16 @@
-Crear una aplicacion donde se vayan mostrando los detalles del tiempo distintas ciudades. 
+## Instrucciones
+
+Crear una aplicacion donde se muestren los detalles del tiempo de distintas ciudades de todos los continentes.
 
 Dentro de la carpeta src tenemos un archivo JSON (cities.json) donde vienen las ciudades con las siguientes propiedades: city, continent, temperature, weather. 
 
-En App, para los distintos continentes, se tienen que implementar botones.
-Los botones tienen que pintar los distintos tiempos de los continentes segun los datos de las ciudades que pertenecen a ese continente.
-La temperatura del continente es la media de los paises y se representara en una escala de la mas baja (azul) a una mas alta (rojo).
+En App, por cada continente, se tiene que implementar un botón con el nombre de dicho continente.
+
+Cuando hagas click en un botón de continente, tienen que aperecer las ciudades que pertenecen a ese continente y en un componente con forma circular representar el nombre, la temperatura, un color de fondo y una imagen del tiempo en esa ciudad.
+
+En la carpeta public tienes una subcarpeta llamada weather-icons-master donde tienes todo tipo de iconos climáticos (descargados de https://erikflowers.github.io/weather-icons/)
+
+Calcula la temperatura media del continente y aplica un color más azul a la ciudad con la temperatura mínima y más rojo (gradualmente) hasta la temperatura más cálida.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
