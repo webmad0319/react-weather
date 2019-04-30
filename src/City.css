@@ -1,0 +1,26 @@
+.City{
+  background-color: #050505;
+  color: #fafafa;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+.City-name{
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.City-weather{
+  font-size: 48px;
+  color: #FAFAFA;
+}
+
+.City-temperature{
+  font-size: 32px;
+}
