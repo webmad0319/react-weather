@@ -8,4 +8,29 @@ nav {
 
 section {
   background: silver;
+  display: flex;
+}
+
+.btn {
+  padding: 1vh 3vw; 
+  margin-right: 20px;
+  font-size: 1.3rem;
+}
+
+.cityWeather {
+  background-color: #000;
+  border-radius:100%;
+  width: 200px;
+  height: 200px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  font-size: 1.4rem;
+}
+
+.cityWeather > i {
+  margin: 20px 0;
 }
