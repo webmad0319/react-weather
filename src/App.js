@@ -54,7 +54,7 @@ class App extends React.Component {
           {
             (this.state.weatherData && this.state.weatherData.length > 0) ?
           this.state.weatherData.map((city, index) => <City key={city.city} {...city}/>) :
-            <p>Please, select a continent to view the weather</p>
+            <p>Please, select a continent to show the weather</p>
           }
         </section>
       </React.Fragment>
