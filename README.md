@@ -8,6 +8,10 @@ En App, por cada continente, se tiene que implementar un botón con el nombre de
 
 Cuando hagas click en un botón de continente, tienen que aperecer las ciudades que pertenecen a ese continente y en un componente con forma circular representar el nombre, la temperatura, un color de fondo y una imagen del tiempo en esa ciudad.
 
+Ejemplo: 
+
+![alt text](bg.png)
+
 En la carpeta public tienes una subcarpeta llamada weather-icons-master donde tienes todo tipo de iconos climáticos (descargados de https://erikflowers.github.io/weather-icons/)
 
 Calcula la temperatura media del continente y aplica un color más azul a la ciudad con la temperatura mínima y más rojo (gradualmente) hasta la temperatura más cálida.

@@ -21,7 +21,7 @@
     "city": "Toronto",
     "continent": "America",
     "temperature": 5,
-    "weather": "cloudy"
+    "weather": "storm"
   },
   {
     "city": "New York",
