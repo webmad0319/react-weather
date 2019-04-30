@@ -7,21 +7,21 @@ export default class City extends Component {
   transformWeatherIcon(weather){
     switch(weather){
       case 'sunny':
-      return <WiDaySunny size={48} color='#fff' />
+      return <WiDaySunny size={48} color='hsl(90, 60%, 40%)' />
       case 'cloudy':
-      return <WiCloud size={48} color='#fff' />
+      return <WiCloud size={48} color='hsl(90, 60%, 40%)' />
       case 'mostly cloudy':
-      return <WiDayCloudy size={48} color='#fff' />
+      return <WiDayCloudy size={48} color='hsl(90, 60%, 40%)' />
       case 'partly cloudy':
-      return <WiDaySunnyOvercast size={48} color='#fff' />
+      return <WiDaySunnyOvercast size={48} color='hsl(90, 60%, 40%)' />
       case 'part cloudy':
-      return <WiDaySunnyOvercast size={48} color='#fff' />
+      return <WiDaySunnyOvercast size={48} color='hsl(90, 60%, 40%)' />
       case 'storm':
-      return <WiDayThunderstorm size={48} color='#fff' />
+      return <WiDayThunderstorm size={48} color='hsl(90, 60%, 40%)' />
       case 'fog':
-      return <WiDayFog size={48} color='#fff' />
+      return <WiDayFog size={48} color='hsl(90, 60%, 40%)' />
       case 'Light Rain':
-      return <WiDayLightning size={48} color='#fff' />
+      return <WiDayLightning size={48} color='hsl(90, 60%, 40%)' />
       default:
       return 'Not available';
     }
