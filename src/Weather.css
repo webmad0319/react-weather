@@ -1,0 +1,22 @@
+.weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 6rem;
+    height: 6rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 2rem;
+    margin: .6rem;
+}
+
+.weather .city-icon {
+    font-size: 3rem;
+}
+
+.weather .city-temperature {
+    font-size: 1.3rem;
+}
