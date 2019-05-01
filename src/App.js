@@ -28,16 +28,18 @@ class App extends React.Component {
     }, 0) / citiesContinent.length;
     let temperature = citiesContinent.map((city) => city.temperature);
 
-    let colorScale = chroma.scale(['rgb(0,0,255)', 'rgb(255,0,0)']).domain([temperature[0], temperature[temperature.length-1]]);
-    let color = colorScale(cities);
-
     this.setState({
       ...this.state,
       cities: citiesContinent,
       average: totalAverage,
       temperature: temperature
     })
+  }
 
+  findColor(specificTemperature) {
+    let temperature = [...this.state.temperature];
+    let colorRange = chroma.scale(['rgb(0,0,255)', 'rgb(255,0,0)']).domain([temperature[0], temperature[temperature.length-1]]);
+    return colorRange(specificTemperature)
   }
 
 
@@ -54,7 +56,7 @@ class App extends React.Component {
     this.state.cities.map((cities,i) => {
       return (
         <React.Fragment key={i}>
-          <City {...cities} />
+          <City {...cities} findColor = {()=> this.findColor(cities.temperature)} />
         </React.Fragment>
       )
     });  

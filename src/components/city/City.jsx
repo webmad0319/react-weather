@@ -17,13 +17,13 @@ export default class city extends Component {
     }
 
     let iconMeteo = Icons[this.props.weather];
-     
+    
 
     return (
     <React.Fragment>
       <div className="cityWeather">
         <h2>{this.props.city}</h2>
-        <i className={iconMeteo} />
+        <i className={iconMeteo} style={{color:this.props.findColor()}} />
         <p>{this.props.temperature} <i className="wi wi-celsius" /></p>
       </div>    
     </React.Fragment>
