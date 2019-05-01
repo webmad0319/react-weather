@@ -2,6 +2,14 @@ nav, section {
   padding: 20px;
 }
 
+nav {
+  display: flex;
+}
+
+nav>button {
+  justify-content: right;
+}
+
 ul {
   display: flex;
 }

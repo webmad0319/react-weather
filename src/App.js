@@ -14,7 +14,8 @@ class App extends React.Component {
       "Asia"
     ],
     displayedCities: [],
-    temp: []
+    temp: [],
+    disp: "none"
   }
 
   showCities(continent) {
@@ -25,13 +26,21 @@ class App extends React.Component {
     this.setState ({
       ...this.state,
       displayedCities: filtered,
-      temp: temp      
+      temp: temp,
+      disp: "block"      
     })
   }
 
   tempColor(temp) {
     let scale = Chroma.scale(["blue", "red"]).domain([Math.min(...this.state.temp), Math.max(...this.state.temp)])
     return scale(temp)
+  }
+
+  sortByTemp() {
+    this.setState ({
+      ...this.state,
+      displayedCities: this.state.displayedCities.sort((a, b) => a.temperature - b.temperature)
+    })
   }
 
 
@@ -44,10 +53,11 @@ class App extends React.Component {
                 <li key={idx}><button onClick={() => this.showCities(continent)}>{continent}</button></li>
             )}
           </ul>
+          <button style={{ display: this.state.disp }} onClick={() => this.sortByTemp()}>Sort by temperature</button>
         </nav>
         <section>
           <ul>
-            {this.state.displayedCities.sort((a, b) => a.temperature - b.temperature).map((city, idx) =>
+            {this.state.displayedCities.map((city, idx) =>
               { 
                 return <City key={idx} {...city} color={this.tempColor(city.temperature)}/>
               }
