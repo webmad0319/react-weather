@@ -3,7 +3,7 @@
     "city": "San Francisco",
     "continent": "America",
     "temperature": 12,
-    "weather": "partly cloudy"
+    "weather": "cloudy"
   },
   {
     "city": "Caracas",
@@ -15,13 +15,13 @@
     "city": "Buenos Aires",
     "continent": "America",
     "temperature": 14,
-    "weather": "mostly cloudy"
+    "weather": "cloudy high"
   },
   {
     "city": "Toronto",
     "continent": "America",
     "temperature": 5,
-    "weather": "storm"
+    "weather": "storm showers"
   },
   {
     "city": "New York",
@@ -39,7 +39,7 @@
     "city": "Lisbon",
     "continent": "Europe",
     "temperature": 22,
-    "weather": "partly cloudy"
+    "weather": "cloudy"
   },
   {
     "city": "Berlin",
@@ -57,7 +57,7 @@
     "city": "Atenas",
     "continent": "Europe",
     "temperature": 23,
-    "weather": "partly cloudy"
+    "weather": "cloudy high"
   },
   {
     "city": "Tokyo",
@@ -69,67 +69,67 @@
     "city": "Kuala Lumpur",
     "continent": "Asia",
     "temperature": 28,
-    "weather": "mostly cloudy"
+    "weather": "cloudy high"
   },
   {
     "city": "Pyongyang",
     "continent": "Asia",
     "temperature": 13,
-    "weather": "partly cloudy"
+    "weather": "cloudy"
   },
   {
     "city": "Singapore",
     "continent": "Asia",
     "temperature": 29,
-    "weather": "mostly cloudy"
+    "weather": "rain"
   },
   {
     "city": "Beijing",
     "continent": "Asia",
     "temperature": 19,
-    "weather": "partly cloudy"
+    "weather": "rain"
   },
   {
     "city": "Casablanca",
     "continent": "Africa",
     "temperature": 22,
-    "weather": "partly cloudy"
+    "weather": "cloudy"
   },
   {
     "city": "Cape Town",
     "continent": "Africa",
     "temperature": 18,
-    "weather": "Light Rain"
+    "weather": "Rain"
   },
   {
     "city": "Cairo",
     "continent": "Africa",
     "temperature": 34,
-    "weather": "partly cloudy"
+    "weather": "cloudy"
   },
   {
     "city": "Algiers",
     "continent": "Africa",
     "temperature": 19,
-    "weather": "partly cloudy"
+    "weather": "cloudy"
   },
   {
     "city": "Antananarivo",
     "continent": "Africa",
     "temperature": 22,
-    "weather": "partly cloudy"
+    "weather": "cloudy"
   },
   {
     "city": "Wellington",
     "continent": "Oceania",
     "temperature": 11,
-    "weather": "mostly cloudy"
+    "weather": "sunny"
   },
   {
     "city": "Sydney",
     "continent": "Oceania",
     "temperature": 21,
-    "weather": "part cloudy"
+    "weather": "sunny"
   }
   
 ]

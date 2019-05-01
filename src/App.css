@@ -3,7 +3,20 @@ nav, section {
 }
 
 nav {
-  color: red;
+  display: flex;
+}
+
+nav>button {
+  justify-content: right;
+}
+
+ul {
+  display: flex;
+}
+
+button {
+  border: none;
+  background: none;
 }
 
 section {
