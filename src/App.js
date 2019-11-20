@@ -1,4 +1,8 @@
 import React from 'react';
+import chroma from 'chroma-js';
+import cities from './cities.json'
+import City from './components/city/City'
+import "./weather-icons-master/css/weather-icons.css"
 import './App.css';
 
 class App extends React.Component {
@@ -9,20 +13,64 @@ class App extends React.Component {
       "Oceania",
       "Africa",
       "Asia"
-    ]
+    ],
+    cities: [],
+    average : 0,
+    temperature : []
   }
 
+
+  showCities(continent) {
+    let allThecities = [...cities];
+    let citiesContinent = allThecities.filter(city => city.continent === continent).sort((a,b) => a.temperature - b.temperature);
+    let totalAverage = citiesContinent.reduce((a,b) => {
+        return a + b.temperature
+    }, 0) / citiesContinent.length;
+    let temperature = citiesContinent.map((city) => city.temperature);
+
+    this.setState({
+      ...this.state,
+      cities: citiesContinent,
+      average: totalAverage,
+      temperature: temperature
+    })
+  }
+
+  findColor(specificTemperature) {
+    let temperature = [...this.state.temperature];
+    let colorRange = chroma.scale(['rgb(0,0,255)', 'rgb(255,0,0)']).domain([temperature[0], temperature[temperature.length-1]]);
+    return colorRange(specificTemperature)
+  }
+
+
   render() {
+    const buttonContinent = 
+      this.state.continents.map((continents,i) => {
+        return (
+          <React.Fragment key={i}>
+            <button className="btn" type="button" onClick={() => this.showCities(continents)}>{[...continents]}</button>
+          </React.Fragment>
+        )
+      });
+    const showCieties = 
+    this.state.cities.map((cities,i) => {
+      return (
+        <React.Fragment key={i}>
+          <City {...cities} findColor = {()=> this.findColor(cities.temperature)} />
+        </React.Fragment>
+      )
+    });  
     return (
       <React.Fragment>
         <nav>
           <ul>
-            <li>Continent buttons go here (replace this li with a loop)</li>
+            <li>{buttonContinent}</li>
           </ul>
         </nav>
-        <section>
-          Weather widgets go here
+        <section className="weatherSection">
+          {showCieties}
         </section>
+        <h2 className="average">Total average:{this.state.average}</h2>
       </React.Fragment>
     )
   }
